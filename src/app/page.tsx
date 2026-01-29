@@ -14,7 +14,7 @@ import MenuItem from '@/components/menu-item';
 const menuItems = [
   { title: 'Pelayanan Keswan', icon: LayoutDashboard, href: '/dashboard' },
   { title: 'Vaksin Rabies', icon: BarChart3, href: '#' },
-  { title: 'Pendataan Populasi', icon: Package, href: '#' },
+  { title: 'Inseminasi Buatan', icon: Package, href: '#' },
   { title: 'Vaksin Rabies', icon: ShoppingCart, href: '#' },
   { title: 'Customers', icon: Users, href: '#' },
   { title: 'Settings', icon: Settings, href: '#' },
