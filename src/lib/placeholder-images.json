@@ -57,8 +57,8 @@
     {
       "id": "arsip-pkh",
       "description": "An organized archive room with files.",
-      "imageUrl": "https://images.unsplash.com/photo-1690264831486-e3feda094345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcmNoaXZlJTIwZmlsZXN8ZW58MHx8fHwxNzY5NjcxMTg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "archive files"
+      "imageUrl": "https://images.unsplash.com/photo-1600103603783-5c747796a56c?q=80&w=400&auto=format&fit=crop",
+      "imageHint": "archive boxes"
     }
   ]
 }
