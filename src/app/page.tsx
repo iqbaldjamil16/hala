@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MenuItem from '@/components/menu-item';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet';
@@ -34,16 +34,39 @@ export default function Home() {
   const [sheetTitle, setSheetTitle] = useState('');
   const { toast } = useToast();
 
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      // Close the sheet if the history state is gone (user pressed back)
+      if (!event.state?.webview) {
+        setSheetOpen(false);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
   const openWebView = (href: string, title: string) => {
     if (href && href !== '#') {
       setSheetUrl(href);
       setSheetTitle(title);
       setSheetOpen(true);
+      window.history.pushState({ webview: true }, '');
     } else {
       toast({
         title: "Segera Hadir",
         description: "Fitur ini sedang dalam pengembangan.",
       });
+    }
+  };
+
+  const handleSheetOpenChange = (open: boolean) => {
+    setSheetOpen(open);
+    if (!open && window.history.state?.webview) {
+      // If sheet is closing and we have a history state, go back
+      window.history.back();
     }
   };
 
@@ -66,7 +89,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
+      <Sheet open={sheetOpen} onOpenChange={handleSheetOpenChange}>
         <SheetContent className="w-screen h-screen max-w-none sm:w-3/4 md:w-1/2 p-0">
           <SheetTitle className="sr-only">{sheetTitle}</SheetTitle>
           {sheetUrl && (
