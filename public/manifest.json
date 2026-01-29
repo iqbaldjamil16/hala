@@ -1,0 +1,22 @@
+{
+  "name": "PKH Mateng",
+  "short_name": "PKH Mateng",
+  "description": "Aplikasi Layanan Peternakan dan Kesehatan Hewan Kabupaten Mamuju Tengah.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f7fa",
+  "theme_color": "#f7f7fa",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
