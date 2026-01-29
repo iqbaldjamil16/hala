@@ -1,9 +1,7 @@
 "use client";
 
 import type { FC } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 import { Card } from '@/components/ui/card';
@@ -30,10 +28,11 @@ type MenuItemProps = {
   className?: string;
   passwordProtected?: boolean;
   password?: string;
+  onClick?: () => void;
+  onPasswordSuccess?: () => void;
 };
 
-const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, className, passwordProtected = false, password: correctPassword }) => {
-  const router = useRouter();
+const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, className, passwordProtected = false, password: correctPassword, onClick, onPasswordSuccess }) => {
   const { toast } = useToast();
   const [open, setOpen] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
@@ -41,7 +40,8 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
   const handlePasswordSubmit = () => {
     if (passwordInput === correctPassword) {
       setOpen(false);
-      router.push(href);
+      setPasswordInput('');
+      onPasswordSuccess?.();
     } else {
       toast({
         title: "Password Salah",
@@ -110,9 +110,9 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
   }
 
   return (
-    <Link href={href} className={cn("group", className)}>
+    <div onClick={onClick} className={cn("group cursor-pointer", className)}>
         {cardContent}
-    </Link>
+    </div>
   );
 };
 
