@@ -16,7 +16,7 @@ const menuItems = [
   { title: 'Vaksin Rabies', icon: BarChart3, href: '#' },
   { title: 'Inseminasi Buatan', icon: Package, href: '#' },
   { title: 'Kelahiran', icon: ShoppingCart, href: '#' },
-  { title: 'Customers', icon: Users, href: '#' },
+  { title: 'Populasi Ternak', icon: Users, href: '#' },
   { title: 'Settings', icon: Settings, href: '#' },
   { title: 'Support', icon: LifeBuoy, href: '#' },
   { title: 'Reports', icon: FileText, href: '#' },
