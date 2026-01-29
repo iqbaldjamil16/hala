@@ -15,8 +15,8 @@ type MenuItemProps = {
 const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, className }) => {
   return (
     <Link href={href} className={cn("group", className)}>
-      <Card className="h-full flex flex-col items-center overflow-hidden rounded-xl bg-card transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:border-accent/80">
-        <div className="pt-2 px-2">
+      <Card className="h-full flex flex-col items-center justify-center overflow-hidden rounded-xl bg-card transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:border-accent/80">
+        <div className="p-2">
           <Image
             src={imageUrl}
             alt={title}
@@ -25,9 +25,6 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
             className="object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
             data-ai-hint={imageHint}
           />
-        </div>
-        <div className="p-2 text-center">
-          <h3 className="text-sm font-semibold leading-tight text-card-foreground">{title}</h3>
         </div>
       </Card>
     </Link>
