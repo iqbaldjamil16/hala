@@ -29,7 +29,7 @@ export default function Home() {
       <div className="w-full max-w-sm">
         <header className="mb-12 text-center">
           <h1 className="font-headline text-6xl font-bold tracking-tight text-primary">
-            GridSpark
+            PKH Mateng
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
             An elegant and modern menu interface.
