@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Cinzel', 'serif'],
+        headline: ['Bungee Shade', 'cursive'],
         code: ['monospace'],
       },
       colors: {
