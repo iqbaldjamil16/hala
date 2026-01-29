@@ -8,6 +8,7 @@ import {
   LifeBuoy,
   FileText,
   Puzzle,
+  Archive,
 } from 'lucide-react';
 import MenuItem from '@/components/menu-item';
 
@@ -21,6 +22,7 @@ const menuItems = [
   { title: 'Lalulintas Ternak', icon: LifeBuoy, href: '#' },
   { title: 'Hewan Kurban', icon: FileText, href: '#' },
   { title: 'Lahan Pakan', icon: Puzzle, href: '#' },
+  { title: 'Arsip PKH', icon: Archive, href: '#' },
 ];
 
 export default function Home() {
