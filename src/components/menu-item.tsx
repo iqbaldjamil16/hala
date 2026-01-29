@@ -22,7 +22,7 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
             alt={title}
             width={100}
             height={100}
-            className="object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
+            className="object-contain rounded-md transition-transform duration-300 group-hover:scale-105"
             data-ai-hint={imageHint}
           />
         </div>
