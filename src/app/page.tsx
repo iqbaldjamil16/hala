@@ -35,7 +35,7 @@ export default function Home() {
             An elegant and modern menu interface.
           </p>
         </header>
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-2 gap-4">
           {menuItems.map((item, index) => (
             <MenuItem
               key={index}
