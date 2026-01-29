@@ -29,18 +29,17 @@ type MenuItemProps = {
   imageHint: string;
   className?: string;
   passwordProtected?: boolean;
+  password?: string;
 };
 
-const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, className, passwordProtected = false }) => {
+const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, className, passwordProtected = false, password: correctPassword }) => {
   const router = useRouter();
   const { toast } = useToast();
   const [open, setOpen] = useState(false);
-  const [password, setPassword] = useState('');
-
-  const correctPassword = 'pkh2816';
+  const [passwordInput, setPasswordInput] = useState('');
 
   const handlePasswordSubmit = () => {
-    if (password === correctPassword) {
+    if (passwordInput === correctPassword) {
       setOpen(false);
       router.push(href);
     } else {
@@ -49,7 +48,7 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
         description: "Silakan coba lagi.",
         variant: "destructive",
       });
-      setPassword('');
+      setPasswordInput('');
     }
   };
   
@@ -91,8 +90,8 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
                         <Input
                             id="password"
                             type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            value={passwordInput}
+                            onChange={(e) => setPasswordInput(e.target.value)}
                             className="col-span-3"
                             onKeyDown={(e) => {
                                 if (e.key === 'Enter') {

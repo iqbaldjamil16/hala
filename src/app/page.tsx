@@ -3,7 +3,7 @@ import MenuItem from '@/components/menu-item';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const menuItemsData = [
-  { title: 'Pelayanan Keswan', href: '/dashboard', imageId: 'pelayanan-keswan', passwordProtected: true },
+  { title: 'Pelayanan Keswan', href: '/dashboard', imageId: 'pelayanan-keswan' },
   { title: 'Vaksin Rabies', href: '#', imageId: 'vaksin-rabies' },
   { title: 'Inseminasi Buatan', href: '#', imageId: 'inseminasi-buatan' },
   { title: 'Kelahiran', href: '#', imageId: 'kelahiran' },
@@ -12,7 +12,7 @@ const menuItemsData = [
   { title: 'Lalulintas Ternak', href: '#', imageId: 'lalulintas-ternak' },
   { title: 'Hewan Kurban', href: '#', imageId: 'hewan-kurban' },
   { title: 'Lahan Pakan', href: '#', imageId: 'lahan-pakan' },
-  { title: 'Arsip PKH', href: '#', imageId: 'arsip-pkh' },
+  { title: 'Arsip PKH', href: '#', imageId: 'arsip-pkh', passwordProtected: true, password: 'pkhm46' },
 ];
 
 const menuItems = menuItemsData.map(item => {
@@ -34,7 +34,7 @@ export default function Home() {
           </h1>
         </header>
         <div className="grid grid-cols-2 gap-4">
-          {menuItems.map((item, index) => (
+          {menuItems.map((item: any, index) => (
             <MenuItem
               key={index}
               title={item.title}
@@ -42,6 +42,7 @@ export default function Home() {
               imageUrl={item.imageUrl}
               imageHint={item.imageHint}
               passwordProtected={item.passwordProtected}
+              password={item.password}
             />
           ))}
         </div>
