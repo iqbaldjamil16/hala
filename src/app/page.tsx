@@ -31,9 +31,6 @@ export default function Home() {
           <h1 className="font-headline text-6xl font-bold tracking-tight text-primary">
             PKH Mateng
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            An elegant and modern menu interface.
-          </p>
         </header>
         <div className="grid grid-cols-2 gap-4">
           {menuItems.map((item, index) => (
