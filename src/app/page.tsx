@@ -1,27 +1,27 @@
 import {
-  LayoutDashboard,
-  BarChart3,
-  Package,
-  ShoppingCart,
+  Stethoscope,
+  Syringe,
+  Beaker,
+  Baby,
   Users,
-  Settings,
-  LifeBuoy,
-  FileText,
-  Puzzle,
+  UtensilsCrossed,
+  Truck,
+  Rabbit,
+  Wheat,
   Archive,
 } from 'lucide-react';
 import MenuItem from '@/components/menu-item';
 
 const menuItems = [
-  { title: 'Pelayanan Keswan', icon: LayoutDashboard, href: '/dashboard' },
-  { title: 'Vaksin Rabies', icon: BarChart3, href: '#' },
-  { title: 'Inseminasi Buatan', icon: Package, href: '#' },
-  { title: 'Kelahiran', icon: ShoppingCart, href: '#' },
+  { title: 'Pelayanan Keswan', icon: Stethoscope, href: '/dashboard' },
+  { title: 'Vaksin Rabies', icon: Syringe, href: '#' },
+  { title: 'Inseminasi Buatan', icon: Beaker, href: '#' },
+  { title: 'Kelahiran', icon: Baby, href: '#' },
   { title: 'Populasi Ternak', icon: Users, href: '#' },
-  { title: 'Pemotongan Ternak', icon: Settings, href: '#' },
-  { title: 'Lalulintas Ternak', icon: LifeBuoy, href: '#' },
-  { title: 'Hewan Kurban', icon: FileText, href: '#' },
-  { title: 'Lahan Pakan', icon: Puzzle, href: '#' },
+  { title: 'Pemotongan Ternak', icon: UtensilsCrossed, href: '#' },
+  { title: 'Lalulintas Ternak', icon: Truck, href: '#' },
+  { title: 'Hewan Kurban', icon: Rabbit, href: '#' },
+  { title: 'Lahan Pakan', icon: Wheat, href: '#' },
   { title: 'Arsip PKH', icon: Archive, href: '#' },
 ];
 
