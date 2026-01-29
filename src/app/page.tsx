@@ -28,7 +28,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-8">
       <div className="w-full max-w-sm">
         <header className="mb-12 text-center">
-          <h1 className="font-headline text-6xl font-bold tracking-tight text-primary">
+          <h1 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-6xl whitespace-nowrap">
             PKH Mateng
           </h1>
         </header>
