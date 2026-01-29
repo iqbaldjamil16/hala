@@ -1,7 +1,7 @@
 export default function DashboardPage() {
   // URL ini dapat diubah ke situs web mana pun yang Anda inginkan.
   // Pastikan situs tersebut mengizinkan untuk disematkan dalam iframe.
-  const url = 'https://id.wikipedia.org/wiki/Halaman_Utama';
+  const url = 'https://keswan-pearl.vercel.app/';
 
   return (
     <div className="h-screen w-screen bg-white">
