@@ -15,13 +15,14 @@ type MenuItemProps = {
 const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, className }) => {
   return (
     <Link href={href} className={cn("group", className)}>
-      <Card className="h-full overflow-hidden rounded-xl bg-card transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:border-accent/80">
-        <div className="relative aspect-square w-full">
+      <Card className="h-full flex flex-col items-center overflow-hidden rounded-xl bg-card transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:border-accent/80">
+        <div className="pt-2 px-2">
           <Image
             src={imageUrl}
             alt={title}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            width={100}
+            height={100}
+            className="object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
             data-ai-hint={imageHint}
           />
         </div>
