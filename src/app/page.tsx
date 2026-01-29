@@ -27,9 +27,9 @@ const menuItems = menuItemsData.map(item => {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-8">
-      <div className="w-full max-w-sm">
-        <header className="mb-12 text-center">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-6xl whitespace-nowrap">
+      <div className="w-full max-w-xs">
+        <header className="mb-8 text-center">
+          <h1 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-5xl whitespace-nowrap">
             PKH Mateng
           </h1>
         </header>
