@@ -15,7 +15,7 @@ const menuItems = [
   { title: 'Pelayanan Keswan', icon: LayoutDashboard, href: '/dashboard' },
   { title: 'Vaksin Rabies', icon: BarChart3, href: '#' },
   { title: 'Inseminasi Buatan', icon: Package, href: '#' },
-  { title: 'Vaksin Rabies', icon: ShoppingCart, href: '#' },
+  { title: 'Kelahiran', icon: ShoppingCart, href: '#' },
   { title: 'Customers', icon: Users, href: '#' },
   { title: 'Settings', icon: Settings, href: '#' },
   { title: 'Support', icon: LifeBuoy, href: '#' },
