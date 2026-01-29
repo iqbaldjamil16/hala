@@ -3,7 +3,7 @@ import MenuItem from '@/components/menu-item';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const menuItemsData = [
-  { title: 'Pelayanan Keswan', href: '/dashboard', imageId: 'pelayanan-keswan' },
+  { title: 'Pelayanan Keswan', href: '/dashboard', imageId: 'pelayanan-keswan', passwordProtected: true },
   { title: 'Vaksin Rabies', href: '#', imageId: 'vaksin-rabies' },
   { title: 'Inseminasi Buatan', href: '#', imageId: 'inseminasi-buatan' },
   { title: 'Kelahiran', href: '#', imageId: 'kelahiran' },
@@ -41,6 +41,7 @@ export default function Home() {
               href={item.href}
               imageUrl={item.imageUrl}
               imageHint={item.imageHint}
+              passwordProtected={item.passwordProtected}
             />
           ))}
         </div>
