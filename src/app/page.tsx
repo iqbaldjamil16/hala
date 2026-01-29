@@ -7,7 +7,7 @@ const menuItemsData = [
   { title: 'Vaksin Rabies', href: '#', imageId: 'vaksin-rabies' },
   { title: 'Inseminasi Buatan', href: '#', imageId: 'inseminasi-buatan' },
   { title: 'Kelahiran', href: '#', imageId: 'kelahiran' },
-  { title: 'Populasi Ternak', href: '#', imageId: 'populasi-ternak' },
+  { title: 'Populasi Ternak', href: '/populasi-ternak', imageId: 'populasi-ternak' },
   { title: 'Pemotongan Ternak', href: '#', imageId: 'pemotongan-ternak' },
   { title: 'Lalulintas Ternak', href: '#', imageId: 'lalulintas-ternak' },
   { title: 'Hewan Kurban', href: '#', imageId: 'hewan-kurban' },
