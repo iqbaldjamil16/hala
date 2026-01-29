@@ -25,17 +25,17 @@ const menuItems = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4 sm:p-8">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-8">
       <div className="w-full max-w-6xl">
         <header className="mb-12 text-center">
-          <h1 className="font-headline text-5xl font-bold tracking-tight text-primary md:text-6xl">
+          <h1 className="font-headline text-6xl font-bold tracking-tight text-primary">
             GridSpark
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
             An elegant and modern menu interface.
           </p>
         </header>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-3 gap-6">
           {menuItems.map((item, index) => (
             <MenuItem
               key={index}
