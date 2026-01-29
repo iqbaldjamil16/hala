@@ -13,7 +13,7 @@ import MenuItem from '@/components/menu-item';
 
 const menuItems = [
   { title: 'Pelayanan Keswan', icon: LayoutDashboard, href: '/dashboard' },
-  { title: 'Analytics', icon: BarChart3, href: '#' },
+  { title: 'Inseminasi Buatan', icon: BarChart3, href: '#' },
   { title: 'Products', icon: Package, href: '#' },
   { title: 'Orders', icon: ShoppingCart, href: '#' },
   { title: 'Customers', icon: Users, href: '#' },
