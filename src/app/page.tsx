@@ -12,7 +12,7 @@ import {
 import MenuItem from '@/components/menu-item';
 
 const menuItems = [
-  { title: 'Dashboard', icon: LayoutDashboard, href: '/dashboard' },
+  { title: 'Pelayanan Keswan', icon: LayoutDashboard, href: '/dashboard' },
   { title: 'Analytics', icon: BarChart3, href: '#' },
   { title: 'Products', icon: Package, href: '#' },
   { title: 'Orders', icon: ShoppingCart, href: '#' },
