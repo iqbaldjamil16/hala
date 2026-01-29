@@ -44,9 +44,9 @@
     },
     {
       "id": "hewan-kurban",
-      "description": "A healthy cow for Qurban sacrifice.",
-      "imageUrl": "https://images.unsplash.com/photo-1583300387927-c509ac436aa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYWNyaWZpY2lhbCUyMGNvd3xlbnwwfHx8fDE3Njk2NzExODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sacrificial cow"
+      "description": "A healthy goat for Qurban sacrifice.",
+      "imageUrl": "https://i.imgur.com/Qnqp90m.jpeg",
+      "imageHint": "sacrificial goat"
     },
     {
       "id": "lahan-pakan",
