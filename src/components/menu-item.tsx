@@ -25,8 +25,8 @@ const MenuItem: FC<MenuItemProps> = ({ title, href, imageUrl, imageHint, classNa
             data-ai-hint={imageHint}
           />
         </div>
-        <div className="p-4 text-center">
-          <h3 className="text-base font-semibold text-card-foreground">{title}</h3>
+        <div className="p-2 text-center">
+          <h3 className="text-sm font-semibold leading-tight text-card-foreground">{title}</h3>
         </div>
       </Card>
     </Link>
