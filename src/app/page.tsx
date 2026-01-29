@@ -83,7 +83,7 @@ export default function Home() {
         )}
         <button
           onClick={() => window.history.back()}
-          className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 flex h-12 w-24 items-start justify-center rounded-t-full bg-primary/80 pt-2 text-primary-foreground shadow-lg backdrop-blur-sm transition-all hover:bg-primary"
+          className="fixed top-1/2 left-2 -translate-y-1/2 z-50 flex h-10 w-10 items-center justify-center rounded-md bg-background/50 text-foreground shadow-lg backdrop-blur-sm transition-all hover:bg-background/80"
           aria-label="Kembali ke menu utama"
         >
           <ChevronLeft className="h-7 w-7" />
