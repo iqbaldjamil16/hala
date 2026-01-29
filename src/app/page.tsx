@@ -20,7 +20,7 @@ const menuItems = [
   { title: 'Pemotongan Ternak', icon: Settings, href: '#' },
   { title: 'Lalulintas Ternak', icon: LifeBuoy, href: '#' },
   { title: 'Hewan Kurban', icon: FileText, href: '#' },
-  { title: 'Integrations', icon: Puzzle, href: '#' },
+  { title: 'Lahan Pakan', icon: Puzzle, href: '#' },
 ];
 
 export default function Home() {
