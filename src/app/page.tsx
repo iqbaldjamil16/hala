@@ -29,7 +29,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-8">
       <div className="w-full max-w-xs">
         <header className="mb-8 text-center">
-          <h1 className="font-headline text-3xl tracking-tight text-primary sm:text-5xl whitespace-nowrap">
+          <h1 className="font-headline text-3xl tracking-tight text-primary sm:text-5xl whitespace-nowrap [text-shadow:0_4px_0_hsl(var(--accent)/0.5)]">
             PKH Mateng
           </h1>
         </header>
