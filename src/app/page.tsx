@@ -19,7 +19,7 @@ const menuItems = [
   { title: 'Populasi Ternak', icon: Users, href: '#' },
   { title: 'Pemotongan Ternak', icon: Settings, href: '#' },
   { title: 'Lalulintas Ternak', icon: LifeBuoy, href: '#' },
-  { title: 'Reports', icon: FileText, href: '#' },
+  { title: 'Hewan Kurban', icon: FileText, href: '#' },
   { title: 'Integrations', icon: Puzzle, href: '#' },
 ];
 
