@@ -18,7 +18,7 @@ const menuItems = [
   { title: 'Kelahiran', icon: ShoppingCart, href: '#' },
   { title: 'Populasi Ternak', icon: Users, href: '#' },
   { title: 'Pemotongan Ternak', icon: Settings, href: '#' },
-  { title: 'Support', icon: LifeBuoy, href: '#' },
+  { title: 'Lalulintas Ternak', icon: LifeBuoy, href: '#' },
   { title: 'Reports', icon: FileText, href: '#' },
   { title: 'Integrations', icon: Puzzle, href: '#' },
 ];
