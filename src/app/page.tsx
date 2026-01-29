@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import MenuItem from '@/components/menu-item';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useToast } from '@/hooks/use-toast';
+import { ChevronLeft } from 'lucide-react';
 
 const menuItemsData = [
   { title: 'Pelayanan Keswan', href: 'https://keswan-pearl.vercel.app/', imageId: 'pelayanan-keswan' },
@@ -80,6 +81,13 @@ export default function Home() {
                 sandbox="allow-scripts allow-same-origin allow-forms"
             />
         )}
+        <button
+          onClick={() => window.history.back()}
+          className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 flex h-12 w-24 items-start justify-center rounded-t-full bg-primary/80 pt-2 text-primary-foreground shadow-lg backdrop-blur-sm transition-all hover:bg-primary"
+          aria-label="Kembali ke menu utama"
+        >
+          <ChevronLeft className="h-7 w-7" />
+        </button>
       </div>
     );
   }
