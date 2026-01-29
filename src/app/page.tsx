@@ -35,11 +35,19 @@ export default function Home() {
 
   useEffect(() => {
     const handlePopState = (event: PopStateEvent) => {
-      // Close the webview if the history state is gone (user pressed back)
-      if (!event.state?.webview) {
+      if (event.state?.webview) {
+        setWebViewUrl(event.state.url);
+        setWebViewTitle(event.state.title);
+        setWebViewOpen(true);
+      } else {
         setWebViewOpen(false);
       }
     };
+
+    // Handle case where user reloads the page on a webview state
+    if (window.history.state?.webview) {
+        handlePopState({state: window.history.state} as PopStateEvent);
+    }
 
     window.addEventListener('popstate', handlePopState);
     return () => {
@@ -52,7 +60,7 @@ export default function Home() {
       setWebViewUrl(href);
       setWebViewTitle(title);
       setWebViewOpen(true);
-      window.history.pushState({ webview: true }, '');
+      window.history.pushState({ webview: true, url: href, title: title }, title);
     } else {
       toast({
         title: "Segera Hadir",
